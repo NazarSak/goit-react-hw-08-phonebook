@@ -5,6 +5,8 @@ import Filter from 'components/filter/Filter';
 import { useDispatch } from 'react-redux';
 import { fetchContacts } from 'services/getContacts';
 import { useEffect } from 'react';
+
+
 const  Contacts = () => {
 
     const dispatch = useDispatch()
