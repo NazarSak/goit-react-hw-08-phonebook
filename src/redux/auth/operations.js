@@ -24,6 +24,7 @@ export const register = createAsyncThunk(
     } catch (error) {
       
         Notiflix.Notify.failure("Sorry but this email is alredy exist")
+        
       return thunkAPI.rejectWithValue(error.message);
     }
   }
