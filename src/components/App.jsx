@@ -10,6 +10,7 @@ import Login from 'pages/Login';
 import Home from 'pages/Home';
 import Register from 'pages/Register';
 import Contacts from 'pages/Contacts';
+import NotFound from 'pages/NotFound';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -47,6 +48,7 @@ const App = () => {
               <PrivateRoute redirectTo="/login" component={<Contacts />} />
             }
           />
+           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>
